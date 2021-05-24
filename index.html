@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="js\code.js"></script>
+    <title>Welcome to CovidCare</title>
+    <style>
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #2196f3"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          CovidCare
+          <img
+            src="Assets\Icons\icon.svg"
+            alt=""
+            width="35"
+            height="35"
+            class="d-inline-block align-items-center"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav gap-4">
+            <a
+              class="nav-link active bg-white rounded"
+              style="color: #f50057"
+              aria-current="page"
+              href="#"
+              >Home</a
+            >
+            <a class="nav-link" href="blogs.html">Blog</a>
+            <a class="nav-link" href="about.html">About us</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="d-flex flex-column justify-content-evenly"
+      style="height: 600px"
+    >
+      <div class="d-flex justify-content-center">
+        <input
+          class="form-control me-2 rounded-pill"
+          style="background-color: #eceff1; width: 35%"
+          type="search"
+          placeholder="Search for"
+          aria-label="Search for"
+        />
+        <button type="button" class="btn">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+
+      <div class="p-2 d-flex justify-content-center">
+        <h2 style="color: #f50057">NEED ?</h2>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-evenly">
+        <a href="oxygen.html"
+          ><div
+            class="d-flex card align-items-center justify-content-evenly p-2 m-1"
+            style="width: 10em; background-color: #eceff1"
+          >
+            <img
+              src="Assets\Icons\oxygen's icon.svg"
+              alt="oxygen"
+              class="img-fluid"
+            />
+            <div>
+              <p style="color: #2196f3">OXYGEN</p>
+            </div>
+          </div></a
+        >
+        <a href="plasma.html"
+          ><div
+            class="d-flex card align-items-center justify-content-evenly p-2 m-1"
+            style="width: 10em; background-color: #eceff1"
+          >
+            <img src="Assets\Icons\plasma.svg" alt="plasma" class="img-fluid" />
+            <div>
+              <p style="color: #2196f3">PLASMA</p>
+            </div>
+          </div></a
+        >
+        <a href="bed.html"
+          ><div
+            class="d-flex card align-items-center justify-content-evenly p-2 m-1"
+            style="width: 10em; background-color: #eceff1"
+          >
+            <img src="Assets\Icons\bed.svg" alt="beds" class="img-fluid" />
+            <div>
+              <p style="color: #2196f3">HOSPITAL BEDS</p>
+            </div>
+          </div></a
+        >
+      </div>
+    </div>
+    <div
+      class="d-flex flex-column justify-content-evenly"
+      style="background-color: #eceff1; height: 500px"
+    >
+      <h3 style="text-align: center; color: #f50057">COVID-19 STATISTICS</h3>
+      <div class="d-flex flex-column bg-white container">
+        <div style="display: inline-block; margin: 10px 0px">
+          <span>Country :</span>
+          <select
+            class="form-select"
+            aria-label="Disabled select example"
+            disabled
+            style="display: inline-block; width: 25%"
+          >
+            <option selected>India</option>
+          </select>
+        </div>
+        <table class="table table-sm">
+          <thead style="color: #f50057">
+            <tr>
+              <th scope="col">States</th>
+              <th scope="col">Total Cases</th>
+              <th scope="col">Active Cases</th>
+              <th scope="col">Recovered</th>
+              <th scope="col">Total Deaths</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" id="nm1"></th>
+              <td id="ac1"></td>
+              <td id="ft1"></td>
+              <td id="rc1"></td>
+              <td id="tdh1"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="nm2"></th>
+              <td id="ac2"></td>
+              <td id="ft2"></td>
+              <td id="rc2"></td>
+              <td id="tdh2"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="nm3"></th>
+              <td id="ac3"></td>
+              <td id="ft3"></td>
+              <td id="rc3"></td>
+              <td id="tdh3"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="nm4"></th>
+              <td id="ac4"></td>
+              <td id="ft4"></td>
+              <td id="rc4"></td>
+              <td id="tdh4"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="nm5"></th>
+              <td id="ac5"></td>
+              <td id="ft5"></td>
+              <td id="rc5"></td>
+              <td id="tdh5"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="nm6"></th>
+              <td id="ac6"></td>
+              <td id="ft6"></td>
+              <td id="rc6"></td>
+              <td id="tdh6"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="nm7"></th>
+              <td id="ac7"></td>
+              <td id="ft7"></td>
+              <td id="rc7"></td>
+              <td id="tdh7"></td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="statistics.html" class="btn btn-outline-primary">More</a>
+      </div>
+    </div>
+
+    <div class="d-flex">
+      <img
+        src="Assets\Images\common symptoms.png"
+        class="img-fluid"
+        alt="Common symptoms"
+      />
+    </div>
+    <div class="d-flex">
+      <a href="donate.html"
+        ><img
+          src="Assets\Images\contribute.png"
+          class="img-fluid"
+          alt="Donation"
+      /></a>
+    </div>
+
+    <div
+      class="
+        d-flex
+        flex-wrap
+        justify-content-evenly
+        align-items-center
+        overflow-auto
+      "
+      style="background-color: #f50057; height: 450px"
+    >
+      <a href="blogs.html" style="color: inherit;"><div
+        class="d-flex card align-items-center justify-content-evenly"
+        style="width: 17em; height: 14em"
+      >
+        <img
+          src="Assets\Icons\blog icon.png"
+          alt="..."
+          class="img-thumbnail"
+          style="background-color: #eceff1"
+        />
+        <div>
+          <p><b>BLOG POSTS</b></p>
+        </div>
+      </div></a>
+      <a href="survey.html" style="color: inherit;"><div
+        class="d-flex card align-items-center justify-content-evenly"
+        style="width: 17em; height: 14em"
+      >
+        <img
+          src="Assets\Icons\survey icon.png"
+          alt="..."
+          class="img-thumbnail"
+          style="background-color: #eceff1"
+        />
+        <div>
+          <p><b>QUICK SURVEY</b></p>
+        </div>
+      </div></a>
+    </div>
+
+    <div
+      class="d-flex flex-column justify-content-evenly"
+      style="height: 600px; background-color: #eceff1"
+    >
+      <h3 style="text-align: center; color: #f50057">
+        WANT TO KNOW ABOUT COVID-19 ?
+      </h3>
+      <div class="container">
+        <div
+          class="accordion accordion-flush"
+          style="color: #f50057"
+          id="accordionExample"
+        >
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                What is COVID-19?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>COVID-19</strong> is the disease caused by a new
+                coronavirus called SARS-CoV-2. WHO first learned of this new
+                virus on 31 December 2019, following a report of a cluster of
+                cases of ‘viral pneumonia’ in Wuhan, People’s Republic of China.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Are there long-term effects of COVID-19?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Some people who have had COVID-19, whether they have needed
+                hospitalization or not, continue to experience symptoms,
+                including fatigue, respiratory and neurological symptoms.
+                <br /><br />
+                WHO is working with our Global Technical Network for Clinical
+                Management of COVID-19, researchers and patient groups around
+                the world to design and carry out studies of patients beyond the
+                initial acute course of illness to understand the proportion of
+                patients who have long term effects, how long they persist, and
+                why they occur. These studies will be used to develop further
+                guidance for patient care.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                When should I get a test for COVID-19?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Anyone with symptoms should be tested, wherever possible. People
+                who do not have symptoms but have had close contact with someone
+                who is, or may be, infected may also consider testing – contact
+                your local health guidelines and follow their guidance.
+                <br /><br />
+                While a person is waiting for test results, they should remain
+                isolated from others. Where testing capacity is limited, tests
+                should first be done for those at higher risk of infection, such
+                as health workers, and those at higher risk of severe illness
+                such as older people, especially those living in seniors’
+                residences or long-term care facilities.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bd-footer text-white" style="background-color: #2196f3">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <a
+              class="
+                d-inline-flex
+                align-items-center
+                mb-2
+                link-dark
+                text-decoration-none
+              "
+              href="/"
+              aria-label="Bootstrap"
+            >
+              <span class="fs-5 text-white">CovidCare</span>
+              <img
+                src="Assets\Icons\icon.svg"
+                alt="main-icon"
+                width="40"
+                height="40"
+              />
+            </a>
+            <ul class="list-unstyled small text-light">
+              <li class="mb-2">Designed to help people in this pandemic.</li>
+              <li class="mb-2">Team RunTimeTerror</li>
+              <li class="mb-2">IBM SkillsBuild Project</li>
+            </ul>
+          </div>
+          <div class="col-4 offset-lg-1 mb-3">
+            <h5 style="border-bottom: 1px solid white; padding: 2px">PAGES</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="blogs.html">Blog</a></li>
+              <li class="mb-2"><a href="about.html">About us</a></li>
+              <li class="mb-2">
+                <a href="contact.html">Contact</a>
+              </li>
+              <li class="mb-2">
+                <a href="privacy.html">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4 mb-3">
+            <h5 style="border-bottom: 1px solid white; padding: 2px">
+              QUICK LINKS
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="oxygen.html">Oxygen</a>
+              </li>
+              <li class="mb-2">
+                <a href="plasma.html">Plasma</a>
+              </li>
+              <li class="mb-2">
+                <a href="bed.html">Beds</a>
+              </li>
+              <li class="mb-2">
+                <a href="statistics.html">Statistics</a>
+              </li>
+              <li class="mb-2">
+                <a href="donate.html">Donation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center bg-primary p-3">
+        © 2021 Copyright:
+        <a class="text-dark" href="index.html">CovidCare.com(RunTimeTerror)</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

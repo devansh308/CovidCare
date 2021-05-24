@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="js\statistics.js"></script>
+    <title>Statistics - CovidCare</title>
+    <style>
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #2196f3"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          CovidCare
+          <img
+            src="Assets\Icons\icon.svg"
+            alt=""
+            width="35"
+            height="35"
+            class="d-inline-block align-items-center"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav gap-4">
+            <a
+              class="nav-link active bg-white rounded"
+              style="color: #f50057"
+              aria-current="page"
+              href="index.html"
+              >Home</a
+            >
+            <a class="nav-link" href="blogs.html">Blog</a>
+            <a class="nav-link" href="about.html">About us</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item text-success"><a href="index.html" style="color: #f50057;">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Statistics</li>
+      </ol>
+    </nav>
+    <!-- Breadcrumb end -->
+
+
+    <div
+      class="d-flex flex-column justify-content-evenly"
+      style="background-color: #eceff1; height: 1750px"
+    >
+      <div>
+        <h3 style="text-align: center; color: #f50057">COVID-19 STATISTICS</h3>
+      <h6 style="text-align: center;">COVID-19 statistics of all states and Union territories of India</h6>
+      </div>
+      <div class="d-flex flex-column bg-white container">
+        
+        <table class="table table-sm">
+          <thead style="color: #f50057">
+            <tr>
+              <th scope="col">States</th>
+              <th scope="col">Total Cases</th>
+              <th scope="col">Active Cases</th>
+              <th scope="col">Recovered</th>
+              <th scope="col">Total Deaths</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" id="tnm2"></th>
+              <td id="tac2"></td>
+              <td id="tft2"></td>
+              <td id="trc2"></td>
+              <td id="ttdh2"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm3"></th>
+              <td id="tac3"></td>
+              <td id="tft3"></td>
+              <td id="trc3"></td>
+              <td id="ttdh3"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm4"></th>
+              <td id="tac4"></td>
+              <td id="tft4"></td>
+              <td id="trc4"></td>
+              <td id="ttdh4"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm5"></th>
+              <td id="tac5"></td>
+              <td id="tft5"></td>
+              <td id="trc5"></td>
+              <td id="ttdh5"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm6"></th>
+              <td id="tac6"></td>
+              <td id="tft6"></td>
+              <td id="trc6"></td>
+              <td id="ttdh6"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm7"></th>
+              <td id="tac7"></td>
+              <td id="tft7"></td>
+              <td id="trc7"></td>
+              <td id="ttdh7"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm8"></th>
+              <td id="tac8"></td>
+              <td id="tft8"></td>
+              <td id="trc8"></td>
+              <td id="ttdh8"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm9"></th>
+              <td id="tac9"></td>
+              <td id="tft9"></td>
+              <td id="trc9"></td>
+              <td id="ttdh9"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm10"></th></th>
+              <td id="tac10"></td>
+              <td id="tft10"></td>
+              <td id="trc10"></td>
+              <td id="ttdh10"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm11"></th>
+              <td id="tac11"></td>
+              <td id="tft11"></td>
+              <td id="trc11"></td>
+              <td id="ttdh11"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm12"></th>
+              <td id="tac12"></td>
+              <td id="tft12"></td>
+              <td id="trc12"></td>
+              <td id="ttdh12"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm13"></th>
+              <td id="tac13"></td>
+              <td id="tft13"></td>
+              <td id="trc13"></td>
+              <td id="ttdh13"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm14"></th>
+              <td id="tac14"></td>
+              <td id="tft14"></td>
+              <td id="trc14"></td>
+              <td id="ttdh14"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm15"></th>
+              <td id="tac15"></td>
+              <td id="tft15"></td>
+              <td id="trc15"></td>
+              <td id="ttdh15"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm16"></th>
+              <td id="tac16"></td>
+              <td id="tft16"></td>
+              <td id="trc16"></td>
+              <td id="ttdh16"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm17"></th>
+              <td id="tac17"></td>
+              <td id="tft17"></td>
+              <td id="trc17"></td>
+              <td id="ttdh17"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm18"></th>
+              <td id="tac18"></td>
+              <td id="tft18"></td>
+              <td id="trc18"></td>
+              <td id="ttdh18"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm19"></th>
+              <td id="tac19"></td>
+              <td id="tft19"></td>
+              <td id="trc19"></td>
+              <td id="ttdh19"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm20"></th>
+              <td id="tac20"></td>
+              <td id="tft20"></td>
+              <td id="trc20"></td>
+              <td id="ttdh20"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm21"></th>
+              <td id="tac21"></td>
+              <td id="tft21"></td>
+              <td id="trc21"></td>
+              <td id="ttdh21"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm22"></th>
+              <td id="tac22"></td>
+              <td id="tft22"></td>
+              <td id="trc22"></td>
+              <td id="ttdh22"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm23"></th>
+              <td id="tac23"></td>
+              <td id="tft23"></td>
+              <td id="trc23"></td>
+              <td id="ttdh23"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm24"></th>
+              <td id="tac24"></td>
+              <td id="tft24"></td>
+              <td id="trc24"></td>
+              <td id="ttdh24"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm25"></th>
+              <td id="tac25"></td>
+              <td id="tft25"></td>
+              <td id="trc25"></td>
+              <td id="ttdh25"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm26"></th>
+              <td id="tac26"></td>
+              <td id="tft26"></td>
+              <td id="trc26"></td>
+              <td id="ttdh26"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm27"></th>
+              <td id="tac27"></td>
+              <td id="tft27"></td>
+              <td id="trc27"></td>
+              <td id="ttdh27"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm28"></th>
+              <td id="tac28"></td>
+              <td id="tft28"></td>
+              <td id="trc28"></td>
+              <td id="ttdh28"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm29"></th>
+              <td id="tac29"></td>
+              <td id="tft29"></td>
+              <td id="trc29"></td>
+              <td id="ttdh29"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm30"></th>
+              <td id="tac30"></td>
+              <td id="tft30"></td>
+              <td id="trc30"></td>
+              <td id="ttdh30"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm31"></th>
+              <td id="tac31"></td>
+              <td id="tft31"></td>
+              <td id="trc31"></td>
+              <td id="ttdh31"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm32"></th>
+              <td id="tac32"></td>
+              <td id="tft32"></td>
+              <td id="trc32"></td>
+              <td id="ttdh32"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm33"></th>
+              <td id="tac33"></td>
+              <td id="tft33"></td>
+              <td id="trc33"></td>
+              <td id="ttdh33"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm34"></th>
+              <td id="tac34"></td>
+              <td id="tft34"></td>
+              <td id="trc34"></td>
+              <td id="ttdh34"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm35"></th>
+              <td id="tac35"></td>
+              <td id="tft35"></td>
+              <td id="trc35"></td>
+              <td id="ttdh35"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm36"></th>
+              <td id="tac36"></td>
+              <td id="tft36"></td>
+              <td id="trc36"></td>
+              <td id="ttdh36"></td>
+            </tr>
+            <tr>
+              <th scope="row" id="tnm37"></th>
+              <td id="tac37"></td>
+              <td id="tft37"></td>
+              <td id="trc37"></td>
+              <td id="ttdh37"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <a href="index.html" class="btn btn-outline-primary btn-lg">Return to main page</a>
+    </div>
+
+<!-- Footer -->
+<footer class="bd-footer text-white" style="background-color: #2196f3">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-3 mb-3">
+        <a
+          class="
+            d-inline-flex
+            align-items-center
+            mb-2
+            link-dark
+            text-decoration-none
+          "
+          href="/"
+          aria-label="Bootstrap"
+        >
+          <span class="fs-5 text-white">CovidCare</span>
+          <img
+            src="Assets\Icons\icon.svg"
+            alt="main-icon"
+            width="40"
+            height="40"
+          />
+        </a>
+        <ul class="list-unstyled small text-light">
+          <li class="mb-2">Designed to help people in this pandemic.</li>
+          <li class="mb-2">Team RunTimeTerror</li>
+          <li class="mb-2">IBM SkillsBuild Project</li>
+        </ul>
+      </div>
+      <div class="col-4 offset-lg-1 mb-3">
+        <h5 style="border-bottom: 1px solid white; padding: 2px">PAGES</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="index.html">Home</a></li>
+          <li class="mb-2"><a href="blogs.html">Blog</a></li>
+          <li class="mb-2"><a href="about.html">About us</a></li>
+          <li class="mb-2">
+            <a href="contact.html">Contact</a>
+          </li>
+          <li class="mb-2">
+            <a href="privacy.html">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-4 mb-3">
+        <h5 style="border-bottom: 1px solid white; padding: 2px">
+          QUICK LINKS
+        </h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="oxygen.html">Oxygen</a>
+          </li>
+          <li class="mb-2">
+            <a href="plasma.html">Plasma</a>
+          </li>
+          <li class="mb-2">
+            <a href="bed.html">Beds</a>
+          </li>
+          <li class="mb-2">
+            <a href="statistics.html">Statistics</a>
+          </li>
+          <li class="mb-2">
+            <a href="donate.html">Donation</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="text-center bg-primary p-3">
+    © 2021 Copyright:
+    <a class="text-dark" href="index.html">CovidCare.com(RunTimeTerror)</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- JavaScript -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="js\statistics.js"></script>
+    <title>Blogs - CovidCare</title>
+    <style>
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #2196f3"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          CovidCare
+          <img
+            src="Assets\Icons\icon.svg"
+            alt=""
+            width="35"
+            height="35"
+            class="d-inline-block align-items-center"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav gap-4">
+            <a class="nav-link" href="about.html">Home</a>
+            <a
+              class="nav-link active bg-white rounded"
+              style="color: #f50057"
+              aria-current="page"
+              href="blogs.html"
+              >Blog</a
+            >
+            <a class="nav-link" href="about.html">About us</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <!-- Intro settings -->
+      <style>
+        #intro {
+          /* Margin to fix overlapping fixed navbar */
+          margin-top: 58px;
+        }
+        @media (max-width: 991px) {
+          #intro {
+            /* Margin to fix overlapping fixed navbar */
+            margin-top: 45px;
+          }
+        }
+      </style>
+
+      <!-- Jumbotron -->
+      <div id="intro" class="p-5 text-center" style="background-color: #eceff1">
+        <h1 class="mb-3 h2">Blog Posts</h1>
+        <p class="mb-3">Read or write blogs that inspire</p>
+        <a
+          class="btn btn-primary m-2"
+          href="#first-blog"
+          role="button"
+          rel="nofollow"
+          >Start reading</a
+        >
+        <a
+          class="btn btn-primary m-2"
+          href="write-blog.html"
+          target="_blank"
+          role="button"
+          >Feature your own blog</a
+        >
+      </div>
+      <!-- Jumbotron -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="my-5">
+      <div class="container">
+        <!--Section: Content-->
+        <section class="text-center">
+          <h4 class="mb-5"><strong>Latest posts</strong></h4>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card" id="first-blog">
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img src="Assets\blog-images\vaccine.jpg" class="img-fluid" />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Is Vaccine safe?</h5>
+                  <p class="card-text">
+                    Check out the pros and cons of vaccine. Should you even take
+                    vaccine or not? If yes, what are side-effects?
+                  </p>
+                  <a href="#!" class="btn btn-primary">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="Assets\blog-images\covid-19.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Do you also have COVID?</h5>
+                  <p class="card-text">
+                    Check out the the modern symptoms of the second wave of
+                    Covid. If you have some symptoms, how to prevent it?
+                  </p>
+                  <a href="#!" class="btn btn-primary">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="Assets\blog-images\work-from-home.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Work from home vs Work in Office</h5>
+                  <p class="card-text">
+                    What are the challenges we face when we work from home? Is
+                    work from home as productive as work from office?
+                  </p>
+                  <a href="#!" class="btn btn-primary">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card">
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img src="Assets\blog-images\binge.jpg" class="img-fluid" />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Best movies/series to binge watch</h5>
+                  <p class="card-text">
+                    Check out some of the best movies and series you need to
+                    binge watch this lockdown and make the best use of your free
+                    time.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="Assets\blog-images\stay-home.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Stay home, Stay productive</h5>
+                  <p class="card-text">
+                    Stay home, stay safe is very common. How can we stay home as
+                    well as be productive, check out a few of our tips.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div
+                  class="bg-image hover-overlay ripple"
+                  data-mdb-ripple-color="light"
+                >
+                  <img
+                    src="Assets\blog-images\together.jpg"
+                    class="img-fluid"
+                  />
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">You are not alone</h5>
+                  <p class="card-text">
+                    Do you feel alone? Are you getting mood swings and signs of
+                    depression. Belive in yourself and know that you are not
+                    alone.
+                  </p>
+                  <a href="#!" class="btn btn-primary">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Section: Content-->
+
+        <!-- Pagination -->
+        <nav class="my-4" aria-label="...">
+          <ul class="pagination pagination-circle justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+                >Previous</a
+              >
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active" aria-current="page">
+              <a class="page-link" href="#"
+                >2 <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class="text-lg-start" style="background-color: #eceff1">
+      <div class="py-4 text-center">
+        <a
+          role="button"
+          class="btn btn-primary btn-lg m-2"
+          href="donate.html"
+          rel="nofollow"
+          target="_blank"
+        >
+          Donate for relief
+        </a>
+        <a
+          role="button"
+          class="btn btn-primary btn-lg m-2"
+          href="write-blog.html"
+          target="_blank"
+        >
+          FEATURE YOUR BLOG
+        </a>
+      </div>
+
+      <hr class="m-0" />
+    </footer>
+    <!--Footer-->
+
+    <!-- Footer -->
+    <footer class="bd-footer text-white" style="background-color: #2196f3">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <a
+              class="
+                d-inline-flex
+                align-items-center
+                mb-2
+                link-dark
+                text-decoration-none
+              "
+              href="/"
+              aria-label="Bootstrap"
+            >
+              <span class="fs-5 text-white">CovidCare</span>
+              <img
+                src="Assets\Icons\icon.svg"
+                alt="main-icon"
+                width="40"
+                height="40"
+              />
+            </a>
+            <ul class="list-unstyled small text-light">
+              <li class="mb-2">Designed to help people in this pandemic.</li>
+              <li class="mb-2">Team RunTimeTerror</li>
+              <li class="mb-2">IBM SkillsBuild Project</li>
+            </ul>
+          </div>
+          <div class="col-4 offset-lg-1 mb-3">
+            <h5 style="border-bottom: 1px solid white; padding: 2px">PAGES</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="blogs.html">Blog</a></li>
+              <li class="mb-2"><a href="about.html">About us</a></li>
+              <li class="mb-2">
+                <a href="contact.html">Contact</a>
+              </li>
+              <li class="mb-2">
+                <a href="privacy.html">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4 mb-3">
+            <h5 style="border-bottom: 1px solid white; padding: 2px">
+              QUICK LINKS
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="oxygen.html">Oxygen</a>
+              </li>
+              <li class="mb-2">
+                <a href="plasma.html">Plasma</a>
+              </li>
+              <li class="mb-2">
+                <a href="bed.html">Beds</a>
+              </li>
+              <li class="mb-2">
+                <a href="statistics.html">Statistics</a>
+              </li>
+              <li class="mb-2">
+                <a href="donate.html">Donation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center bg-primary p-3">
+        © 2021 Copyright:
+        <a class="text-dark" href="index.html">CovidCare.com(RunTimeTerror)</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

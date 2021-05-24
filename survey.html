@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Survey - CovidCare</title>
+    <style>
+      footer a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+    <script src="js\survey.js"></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #2196f3"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          CovidCare
+          <img
+            src="Assets\Icons\icon.svg"
+            alt=""
+            width="35"
+            height="35"
+            class="d-inline-block align-items-center"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav gap-4">
+            <a
+              class="nav-link active bg-white"
+              style="color: #f50057"
+              aria-current="page"
+              href="index.html"
+              >Home</a
+            >
+            <a class="nav-link" href="blogs.html">Blog</a>
+            <a class="nav-link" href="about.html">About us</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="d-flex flex-column justify-content-evenly"
+      style="background-color: #eceff1; height: 750px;">
+      <h3 style="color:#f50057; text-align: center">QUICK SURVEY</h3>
+      <div class="container" style="height: 580px;">
+        
+        <div id="frame1" class="container bg-white" style="display:block; height: 580px;">
+          <div style="width:100%; text-align:center" class="p-5" class="container">
+              <label style="font-size:30px; width:100%; margin-top:60px" class="col-sm-2 col-form-label col-form-label-lg"><b>Take a quick survey</b>
+              </label>
+            <button onclick="goNext()" style="margin-top:10px" type="button" class="btn btn-primary btn-lg">Start Survey
+            </button>
+            </div>
+        </div>
+        
+        <div id="frame2" class="container bg-white" style="height: 580px; position:relative; padding-left:0px; display:none">
+            <div style="width: 100%; height: 10px; background-color: #ddd;">
+            <div style="width: 20%; height:10px; background-color: #f50057;"></div>
+            </div>
+            <div style="width:100%;" class="p-5" class="container">
+              <label style="font-size:30px; width:100%;" class="col-sm-2 col-form-label col-form-label-lg"><b>1. Write your name</b>
+              </label>
+              <div class="col-sm-10">
+                <br><br>
+                <input type="text" class="form-control form-control-lg" id="nameField">
+                <p id="warn1" style="margin-top:5px; color:red;"></p>
+              </div>
+            </div>
+            <button onclick="goNext()" style="position: absolute; right:0; bottom:0; margin: 0px 20px 25px 0px" type="button" class="btn btn-primary btn-lg">Next
+            </button>
+          </div>
+        
+        <div id="frame3" class="container bg-white" style="height: 580px; position:relative; padding-left:0px; display:none">
+          <div style="width: 100%; height: 10px; background-color: #ddd;">
+            <div style="width: 40%; height:10px; background-color: #f50057;"></div>
+            </div>
+            <div style="width:100%;" class="p-5" class="container">
+              <label style="font-size:30px; width:100%;" class="col-sm-2 col-form-label col-form-label-lg"><b>2. Gender</b>
+              </label>
+              <div style="font-size:30px;" class="form-check"><br>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Male
+                </label>
+              </div>
+              <div style="font-size:30px;" class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Female
+                </label>
+              </div>
+            </div>
+            <button onclick="goNext()" style="position: absolute; right:0; bottom:0; margin: 0px 20px 25px 0px" type="button" class="btn btn-primary btn-lg">Next
+            </button>
+            <button onclick="goBack()" style="position: absolute; left:0; bottom:0; margin:0px 0px 25px 20px" type="button" class="btn btn-outline-primary btn-lg">Back
+            </button>
+          </div>
+          
+        <div id="frame4" class="container bg-white" style="height: 580px; position:relative; padding-left:0px; display:none">
+          <div style="width: 100%; height: 10px; background-color: #ddd;">
+            <div style="width: 60%; height:10px; background-color: #f50057;"></div>
+            </div>
+            <div style="width:100%;" class="p-5" class="container">
+              <label style="font-size:30px; width:100%;" class="col-sm-2 col-form-label col-form-label-lg"><b>3. Enter your age</b>
+              </label>
+              <div class="col-sm-10">
+                <br><br>
+                <input type="name" class="form-control form-control-lg" id="age">
+                <p id="warn2" style="margin-top:5px; color:red;"></p>
+                </div>
+            </div>
+            <button onclick="goNext()" style="position: absolute; right:0; bottom:0; margin: 0px 20px 25px 0px" type="button" class="btn btn-primary btn-lg">Next
+            </button>
+            <button onclick="goBack()" style="position: absolute; left:0; bottom:0; margin:0px 0px 25px 20px" type="button" class="btn btn-outline-primary btn-lg">Back
+            </button>
+          </div>
+        
+        <div id="frame5" class="container bg-white" style="height: 580px; position:relative; padding-left:0px; display:none">
+          <div style="width: 100%; height: 10px; background-color: #ddd;">
+            <div style="width: 80%; height:10px; background-color: #f50057;"></div>
+            </div>
+            <div style="width:100%;" class="p-5" class="container">
+              <label style="font-size:20px; width:100%;" class="col-sm-2 col-form-label col-form-label-lg"><b>4. Are you currently experiencing any of the following symptoms?</b>
+              </label>
+              <div class="container p-0" style="width:50%; float:left">
+              <div class="form-check">
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="cb1">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Cough
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="cb2">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Fever
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="cb3">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Sore Throat
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="cb4">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Chest congestion or running nose
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="cb5">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Difficulty in breathing
+                </label>
+                </div>
+                </div>
+                <div class="container p-0" style="width:50%; float:right">
+                    <div class="form-check">
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="cb6">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Body ache
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="cb7">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Pink eyes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="cb8">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Hearing impairment
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="cb9">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Loss of smell and taste
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="cb10">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Gastrointestinal Symptoms
+                </label>
+                </div>
+                </div>
+            </div>
+            <button onclick="goNext()" style="position: absolute; right:0; bottom:0; margin: 0px 20px 25px 0px" type="button" class="btn btn-primary btn-lg">Next
+            </button>
+            <button onclick="goBack()" style="position: absolute; left:0; bottom:0; margin:0px 0px 25px 20px" type="button" class="btn btn-outline-primary btn-lg">Back
+            </button>
+          </div>
+        
+        <div id="frame6" class="container bg-white" style="height: 580px; position:relative; padding-left:0px; display:none">
+          <div style="width: 100%; height: 10px; background-color: #ddd;">
+            <div style="width: 100%; height:10px; background-color: #f50057;"></div>
+            </div>
+            <div style="width:100%;" class="p-5" class="container">
+              <label style="font-size:20px; width:100%;" class="col-sm-2 col-form-label col-form-label-lg"><b>5. Did you have any of the following pre-existing conditions?</b>
+              </label>
+              <div class="form-check">
+                <br>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault" id="cb11">
+                  Diabetes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="cb12">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Hypertension
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="cb13">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Lung Disease
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="cb14">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Heart Disease
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="cb15">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Kidney Disease
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault" id="cb16">
+                  Asthma
+                </label>
+              </div>
+              
+            </div>
+            <button onclick="goNext()" style="position: absolute; right:0; bottom:0; margin: 0px 20px 25px 0px" type="button" class="btn btn-primary btn-lg">Next
+            </button>
+            <button onclick="goBack()" style="position: absolute; left:0; bottom:0; margin:0px 0px 25px 20px" type="button" class="btn btn-outline-primary btn-lg">Back
+            </button>
+          </div>
+        
+        <div id="frame7" class="container bg-white" style="height: 580px; display:none;">
+          <div style="width:100%; text-align:center" class="p-5" class="container">
+              <label style="font-size:30px; width:100%; margin-top:60px" class="col-sm-2 col-form-label col-form-label-lg"><b>Submit this survey to see the results</b>
+              </label>
+            <button onclick="move()" style="margin-top:10px" type="button" class="btn btn-primary btn-lg">Submit Survey
+            </button>
+            </div>
+        </div> 
+        
+        <div id="frame8" class="container bg-white" style="height: 580px; display:none">
+
+          <div style="width:100%; text-align:center" class="p-5" class="container">
+
+              <label style="font-size:30px; width:100%; margin-top:60px" class="col-sm-2 col-form-label col-form-label-lg"><b id="msg"></b>
+              </label>
+            <div id="myProgress" style="width: 70%; background-color: #ddd; margin:auto; margin-top:20px">
+              <div id="myBar" style="width:1%; height: 20px; background-color: #f50057;"></div>
+            </div>
+            </div>
+        </div> 
+        
+        <div id="frame9" class="container" style="width:100%; height: 580px; color:white; display:none">
+          <div style="width:100%; text-align:center;" class="p-5" class="container">
+
+              <label style="font-size:30px; width:100%; margin-top:60px" class="col-sm-2 col-form-label col-form-label-lg"><b id="result"></b>
+              </label>
+            <button onclick="goNext()" id="goto" style="margin-top:10px; background-color:white; border:none" type="button" class="btn btn-outline-primary btn-lg"><a href="index.html" style="text-decoration: none; color: inherit;"><b>Go To Home</b></a>
+            </button>
+            </div>
+        </div> 
+      
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bd-footer text-white" style="background-color: #2196f3">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <a
+              class="
+                d-inline-flex
+                align-items-center
+                mb-2
+                link-dark
+                text-decoration-none
+              "
+              href="/"
+              aria-label="Bootstrap"
+            >
+              <span class="fs-5 text-white">CovidCare</span>
+              <img
+                src="Assets\Icons\icon.svg"
+                alt="main-icon"
+                width="40"
+                height="40"
+              />
+            </a>
+            <ul class="list-unstyled small text-light">
+              <li class="mb-2">Designed to help people in this pandemic.</li>
+              <li class="mb-2">Team RunTimeTerror</li>
+              <li class="mb-2">IBM SkillsBuild Project</li>
+            </ul>
+          </div>
+          <div class="col-4 offset-lg-1 mb-3">
+            <h5 style="border-bottom: 1px solid white; padding: 2px">PAGES</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="blogs.html">Blog</a></li>
+              <li class="mb-2"><a href="about.html">About us</a></li>
+              <li class="mb-2">
+                <a href="contact.html">Contact</a>
+              </li>
+              <li class="mb-2">
+                <a href="privacy.html">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4 mb-3">
+            <h5 style="border-bottom: 1px solid white; padding: 2px">
+              QUICK LINKS
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="oxygen.html">Oxygen</a>
+              </li>
+              <li class="mb-2">
+                <a href="plasma.html">Plasma</a>
+              </li>
+              <li class="mb-2">
+                <a href="bed.html">Beds</a>
+              </li>
+              <li class="mb-2">
+                <a href="statistics.html">Statistics</a>
+              </li>
+              <li class="mb-2">
+                <a href="donate.html">Donation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center bg-primary p-3">
+        © 2021 Copyright:
+        <a class="text-dark" href="index.html">CovidCare.com(RunTimeTerror)</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var a = document.getElementById("frame1");
+      var b=document.getElementById("frame2");
+      var c=document.getElementById("frame3");
+      var d=document.getElementById("frame4");
+      var e =document.getElementById("frame5");
+      var f =document.getElementById("frame6");
+      var g =document.getElementById("frame7");
+      var h =document.getElementById("frame8");
+      var last =document.getElementById("frame9");
+      var goto = document.getElementById("goto");
+      var elem = document.getElementById("myBar");
+      var userName = document.getElementById("nameField");
+      var res = document.getElementById("result");
+      var age = document.getElementById("age");
+      var i = 0;
+      var flag=0;
+      function move() {
+        g.style.display="none";
+        h.style.display="block";
+        if (i == 0){
+        i = 1;
+        var width = 1;
+        var id = setInterval(frame, 30);
+        function frame()
+        {
+          if (width >= 100)
+          {
+            clearInterval(id);
+            i = 0;
+          }
+          else
+          {
+            width++;
+            elem.style.width = width + "%";
+          }
+          flag++;
+          if(flag==100)
+          {
+            h.style.display="none";
+            last.style.display="block";
+            calculateTick();
+          }
+        }
+        }
+      }
+    </script>
+  </body>
+</html>
